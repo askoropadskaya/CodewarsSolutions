@@ -26,3 +26,29 @@ function skipNumbers(n){
   return count;
 }
 // Math.pow(n,3)//
+
+
+https://www.codewars.com/kata/514b92a657cdc65150000006
+
+function solution(number){
+  let sum = 0;
+  for (let i = 3; i < number; i++){
+  if (i % 3 === 0 || i % 5 === 0){
+      sum += i;
+  }
+  }
+  return sum;
+}
+
+https://www.codewars.com/kata/57eaeb9578748ff92a000009
+
+function sumMix(x){
+let sum = 0;
+  for (let i = 0; i < x.length; i++){
+    if (typeof x[i] === 'string') {
+    x[i] = Number(x[i]);
+    }
+  sum += x[i];
+  }
+return sum;
+}
