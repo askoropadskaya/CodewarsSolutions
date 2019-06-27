@@ -52,3 +52,37 @@ let sum = 0;
   }
 return sum;
 }
+
+https://www.codewars.com/kata/55fd2d567d94ac3bc9000064
+
+function rowSumOddNumbers(n) {
+  let c = skipNumbers(n);
+  let firstOddInRow = c * 2 + 1;
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+  sum += firstOddInRow + i*2;
+  }
+  return sum;
+}
+
+
+
+function skipNumbers(n){
+  let count = 0;
+  for (let i = 1; i < n; i++){
+    count += i;
+  }
+  return count;
+}
+// or return n*n*n
+
+https://www.codewars.com/kata/59dd3ccdded72fc78b000b25
+
+function whatday(num) {
+  let arr = ["Sunday", "Monday", "Tuesday", "Wednesday" ,"Thursday", "Friday", "Saturday"];
+  if (num > 7 || num <= 0) {
+    return 'Wrong, please enter a number between 1 and 7';
+  } else {
+    return arr[num - 1];
+  }
+}
