@@ -1,12 +1,12 @@
 Codewars Solutions
 
-https://www.codewars.com/kata/55902c5eaa8069a5b4000083
+=== https://www.codewars.com/kata/55902c5eaa8069a5b4000083 ===
 
 function formatMoney(amount){
 return `$${amount.toFixed(2)}`;
 }
 
-https://www.codewars.com/kata/55fd2d567d94ac3bc9000064
+=== https://www.codewars.com/kata/55fd2d567d94ac3bc9000064 ===
 
 function rowSumOddNumbers(n) {
   let c = skipNumbers(n);
@@ -27,8 +27,8 @@ function skipNumbers(n){
 }
 // Math.pow(n,3)//
 
-
-https://www.codewars.com/kata/514b92a657cdc65150000006
+```
+=== https://www.codewars.com/kata/514b92a657cdc65150000006 ===
 
 function solution(number){
   let sum = 0;
@@ -39,8 +39,8 @@ function solution(number){
   }
   return sum;
 }
-
-https://www.codewars.com/kata/57eaeb9578748ff92a000009
+```
+=== https://www.codewars.com/kata/57eaeb9578748ff92a000009 ===
 
 function sumMix(x){
 let sum = 0;
@@ -52,9 +52,9 @@ let sum = 0;
   }
 return sum;
 }
-
-https://www.codewars.com/kata/55fd2d567d94ac3bc9000064
-
+```
+=== https://www.codewars.com/kata/55fd2d567d94ac3bc9000064 ===
+```
 function rowSumOddNumbers(n) {
   let c = skipNumbers(n);
   let firstOddInRow = c * 2 + 1;
@@ -64,7 +64,7 @@ function rowSumOddNumbers(n) {
   }
   return sum;
 }
-
+```
 
 
 function skipNumbers(n){
@@ -75,9 +75,9 @@ function skipNumbers(n){
   return count;
 }
 // or return n*n*n
-
-https://www.codewars.com/kata/59dd3ccdded72fc78b000b25
-
+```
+=== https://www.codewars.com/kata/59dd3ccdded72fc78b000b25 ===
+```
 function whatday(num) {
   let arr = ["Sunday", "Monday", "Tuesday", "Wednesday" ,"Thursday", "Friday", "Saturday"];
   if (num > 7 || num <= 0) {
@@ -85,4 +85,43 @@ function whatday(num) {
   } else {
     return arr[num - 1];
   }
+}
+
+````
+Mumbling 7 (lev)
+
+=== https://www.codewars.com/kata/5667e8f4e3f572a8f2000039 ===
+
+function accum(s) {
+    let str = '';
+    for (let i = 0; i < s.length; i++){
+        let c = s[i];
+        str = str + '-';
+        for (let j = 0; j < i + 1; j++){
+            if (j === 0) str = str + c.toUpperCase();
+            else str = str + c.toLowerCase();
+        }
+    }
+    str = str.substring(1);
+    return str;
+}
+```
+Type of sum (8 lev)
+
+=== https://www.codewars.com/kata/type-of-sum/solutions/javascript ===
+
+function typeOfSum(a, b) {
+  return typeof (a+b)
+}
+
+
+Switch it Up! (8 lev)
+
+=== https://www.codewars.com/kata/5808dcb8f0ed42ae34000031 ===
+
+JavaScript:
+function switchItUp(number){
+let arr = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+return arr[number];
+
 }
