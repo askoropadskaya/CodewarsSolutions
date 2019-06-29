@@ -130,3 +130,5 @@ return arr[number];
 * new solution
 
 Proverka svjazi
+
+==============
