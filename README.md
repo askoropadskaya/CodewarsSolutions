@@ -131,4 +131,22 @@ return arr[number];
 
 Proverka svjazi
 
+
+Sum of Digits / Digital Root (6 lev)
+
+=== https://www.codewars.com/kata/541c8630095125aba6000c00 ===
+
+JavaScript:
+
+function digital_root(n) {
+  if (n < 10) return n;
+  let str = '' + n;
+  let sum = 0;
+  for (i = 0; i < str.length; i++) {
+    sum += +str[i];
+  }
+  return digital_root(sum);
+}
+
+
 ==============
