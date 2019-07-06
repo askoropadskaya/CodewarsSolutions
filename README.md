@@ -91,7 +91,7 @@ function whatday(num) {
 Mumbling 7 (lev)
 
 === https://www.codewars.com/kata/5667e8f4e3f572a8f2000039 ===
-
+```
 function accum(s) {
     let str = '';
     for (let i = 0; i < s.length; i++){
@@ -116,7 +116,7 @@ function typeOfSum(a, b) {
 
 
 Switch it Up! (8 lev)
-
+```
 === https://www.codewars.com/kata/5808dcb8f0ed42ae34000031 ===
 
 JavaScript:
@@ -127,9 +127,12 @@ return arr[number];
 }
 
 ==============
+```
 7 kyu
 Filter Coffee
+
 https://www.codewars.com/kata/56069d0c4af7f633910000d3
+
 JavaScript:
 function search(budget, prices) {
 let str = '';
@@ -142,9 +145,10 @@ arr.sort((a, b) =>  a - b);
 return arr.join();
 }
 =================
-
+```
 6 kyu
 String average
+```
 https://www.codewars.com/kata/5966847f4025872c7d00015b
 JavaScript:
 function averageString(str) {
@@ -159,6 +163,6 @@ function averageString(str) {
   return arr[avg];
 }
 =======================
-
+```
 
 
