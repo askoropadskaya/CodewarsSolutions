@@ -127,3 +127,38 @@ return arr[number];
 }
 
 ==============
+7 kyu
+Filter Coffee
+https://www.codewars.com/kata/56069d0c4af7f633910000d3
+JavaScript:
+function search(budget, prices) {
+let str = '';
+let arr = [];
+for (let i = 0; i < prices.length; i++)
+  if (prices[i] <= budget) arr.push(prices[i]);
+
+arr.sort((a, b) =>  a - b);
+
+return arr.join();
+}
+=================
+
+6 kyu
+String average
+https://www.codewars.com/kata/5966847f4025872c7d00015b
+JavaScript:
+function averageString(str) {
+  let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six','seven', 'eight', 'nine'];
+  let arrStr = str.split(' ');
+  let sum = 0;
+  for (let i = 0; i < arrStr.length; i++){
+    if (arrStr[i] === '' || arr.indexOf(arrStr[i]) === -1) return 'n/a';
+    sum += arr.indexOf(arrStr[i]);
+  }
+  let avg = Math.floor(sum/arrStr.length);
+  return arr[avg];
+}
+=======================
+
+
+
