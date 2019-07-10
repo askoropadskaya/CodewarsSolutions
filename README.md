@@ -166,5 +166,40 @@ function averageString(str) {
 }
 =======================
 ```
+6 kyu
+Sort the odd
+```
+https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
 
+JavaScript:
+function sortArray(array) {
 
+  let odd = array.filter(a => a % 2 !== 0).sort((a, b) => a - b);
+  let res = array.map(a => a % 2 !== 0 ? odd.shift() : a);
+
+return res;
+}
+======================
+```
+7 kyu
+Maximum Triplet Sum (Array Series #7)
+JavaScript:
+```
+https://www.codewars.com/kata/5aa1bcda373c2eb596000112
+
+function maxTriSum(numbers){
+let sum = 0;
+  let res = numbers.sort((a, b) => b - a);
+  let arr = [];
+  for (let i = 0; i < res.length; i++){
+    if (arr.length >= 3){
+      break
+    }
+    if (!arr.includes(res[i])){
+      arr.push(res[i]);
+      sum += res[i];
+    }
+  }
+ return sum;
+}
+```
