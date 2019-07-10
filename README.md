@@ -1,13 +1,13 @@
 Codewars Solutions
 
 === https://www.codewars.com/kata/55902c5eaa8069a5b4000083 ===
-
+```
 function formatMoney(amount){
 return `$${amount.toFixed(2)}`;
 }
-
+```
 === https://www.codewars.com/kata/55fd2d567d94ac3bc9000064 ===
-
+```
 function rowSumOddNumbers(n) {
   let c = skipNumbers(n);
   let firstOddInRow = c * 2 + 1;
@@ -64,9 +64,7 @@ function rowSumOddNumbers(n) {
   }
   return sum;
 }
-```
 
-```
 function skipNumbers(n){
   let count = 0;
   for (let i = 1; i < n; i++){
@@ -77,7 +75,7 @@ function skipNumbers(n){
 // or return n*n*n
 ```
 === https://www.codewars.com/kata/59dd3ccdded72fc78b000b25 ===
-
+```
 function whatday(num) {
   let arr = ["Sunday", "Monday", "Tuesday", "Wednesday" ,"Thursday", "Friday", "Saturday"];
   if (num > 7 || num <= 0) {
