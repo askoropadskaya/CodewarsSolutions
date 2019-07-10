@@ -77,7 +77,7 @@ function skipNumbers(n){
 // or return n*n*n
 ```
 === https://www.codewars.com/kata/59dd3ccdded72fc78b000b25 ===
-```
+
 function whatday(num) {
   let arr = ["Sunday", "Monday", "Tuesday", "Wednesday" ,"Thursday", "Friday", "Saturday"];
   if (num > 7 || num <= 0) {
