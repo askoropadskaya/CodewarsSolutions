@@ -29,7 +29,7 @@ function skipNumbers(n){
 
 ```
 === https://www.codewars.com/kata/514b92a657cdc65150000006 ===
-
+```
 function solution(number){
   let sum = 0;
   for (let i = 3; i < number; i++){
@@ -41,7 +41,7 @@ function solution(number){
 }
 ```
 === https://www.codewars.com/kata/57eaeb9578748ff92a000009 ===
-
+```
 function sumMix(x){
 let sum = 0;
   for (let i = 0; i < x.length; i++){
@@ -66,7 +66,7 @@ function rowSumOddNumbers(n) {
 }
 ```
 
-
+```
 function skipNumbers(n){
   let count = 0;
   for (let i = 1; i < n; i++){
@@ -109,7 +109,7 @@ function accum(s) {
 Type of sum (8 lev)
 
 === https://www.codewars.com/kata/type-of-sum/solutions/javascript ===
-
+```
 function typeOfSum(a, b) {
   return typeof (a+b)
 }
