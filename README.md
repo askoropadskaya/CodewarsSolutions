@@ -114,26 +114,28 @@ function typeOfSum(a, b) {
   return typeof (a+b)
 }
 
-
-Switch it Up! (8 lev)
 ```
+Switch it Up! (8 lev)
+
 === https://www.codewars.com/kata/5808dcb8f0ed42ae34000031 ===
 
 JavaScript:
+```
 function switchItUp(number){
 let arr = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
 return arr[number];
 
 }
-
-==============
 ```
+==============
+
 7 kyu
 Filter Coffee
 
-https://www.codewars.com/kata/56069d0c4af7f633910000d3
+===https://www.codewars.com/kata/56069d0c4af7f633910000d3===
 
 JavaScript:
+```
 function search(budget, prices) {
 let str = '';
 let arr = [];
@@ -144,15 +146,14 @@ arr.sort((a, b) =>  a - b);
 
 return arr.join();
 }
-=================
-```
 ```
 6 kyu
 String average
 
-https://www.codewars.com/kata/5966847f4025872c7d00015b
+===https://www.codewars.com/kata/5966847f4025872c7d00015b===
 
 JavaScript:
+```
 function averageString(str) {
   let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six','seven', 'eight', 'nine'];
   let arrStr = str.split(' ');
@@ -164,14 +165,15 @@ function averageString(str) {
   let avg = Math.floor(sum/arrStr.length);
   return arr[avg];
 }
-=======================
+
 ```
 6 kyu
 Sort the odd
-```
-https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
+
+===https://www.codewars.com/kata/578aa45ee9fd15ff4600090d===
 
 JavaScript:
+```
 function sortArray(array) {
 
   let odd = array.filter(a => a % 2 !== 0).sort((a, b) => a - b);
@@ -179,14 +181,14 @@ function sortArray(array) {
 
 return res;
 }
-======================
+
 ```
 7 kyu
 Maximum Triplet Sum (Array Series #7)
 JavaScript:
-```
-https://www.codewars.com/kata/5aa1bcda373c2eb596000112
 
+===https://www.codewars.com/kata/5aa1bcda373c2eb596000112===
+```
 function maxTriSum(numbers){
 let sum = 0;
   let res = numbers.sort((a, b) => b - a);
