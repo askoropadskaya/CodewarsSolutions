@@ -203,3 +203,24 @@ let sum = 0;
  return sum;
 }
 ```
+7 kyu
+Sum of Array Averages
+
+===https://www.codewars.com/kata/56d5166ec87df55dbe000063/solutions/javascript===
+
+JavaScript:
+```
+const sumAverage = (arr) => {
+  let result;
+  let sumAvg = 0;
+  for (i = 0; i < arr.length; i++) {
+    let subSum = arr[i].reduce(function(sum, elem) {
+	    return (sum + elem);
+    });
+    let subAvg = subSum / arr[i].length;
+    sumAvg += subAvg;
+  }
+  return result = Math.floor(sumAvg);
+ 
+}
+
