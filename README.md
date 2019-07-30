@@ -223,4 +223,23 @@ const sumAverage = (arr) => {
   return result = Math.floor(sumAvg);
  
 }
-
+```
+7 kyu
+Drying Potatoes
+=== https://www.codewars.com/kata/drying-potatoes/train/javascript  ===
+JavaScript:
+```
+function potatoes(initialPercentOfWater, 
+  initialWeight, finalPercentOfWater) 
+{
+    console.log(`(${initialPercentOfWater}, ${initialWeight}, ${finalPercentOfWater})`)
+    
+    let dry = initialWeight * (100 - initialPercentOfWater) / 100;
+    let persDryAfter = 100 - finalPercentOfWater;
+    let kgWaterAfter = finalPercentOfWater / persDryAfter * dry;
+    
+    console.log(`total: ${kgWaterAfter + dry}`)
+    let total = Math.trunc(kgWaterAfter + dry);
+    return total;
+}
+```
