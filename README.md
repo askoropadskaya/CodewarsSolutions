@@ -287,3 +287,15 @@ const GetSum = (a, b) => {
   return (max - min + 1) * (min + max) / 2;
 }
 ```
+7 kyu
+Regex validate PIN code
+=== https://www.codewars.com/kata/55f8a9c06c018a0d6e000132/solutions/javascript===
+```
+function validatePIN(pin) {
+  if (/^(\d{4}|\d{6})$/.test(pin)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+```
