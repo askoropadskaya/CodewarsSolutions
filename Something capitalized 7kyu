@@ -1,0 +1,7 @@
+```function testit(s){
+  return s.split(' ')
+    .map(str => 
+      str.substring(0, str.length - 1) + str.substring(str.length - 1).toUpperCase()
+    )
+    .join(' ');
+}```
