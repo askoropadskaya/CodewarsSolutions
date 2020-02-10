@@ -1,0 +1,5 @@
+function toTime(seconds) {
+let h = Math.trunc(seconds/3600);
+let m = Math.trunc(seconds % 3600 / 60);
+return `${h} hour(s) and ${m} minute(s)`;
+}
