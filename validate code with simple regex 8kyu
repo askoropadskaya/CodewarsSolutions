@@ -1,0 +1,16 @@
+```
+function validateCode (code) {return /^[123]/.test(code)}
+```
+
+OR long
+```
+function validateCode (code) {
+let newCode = code.toString();
+if (newCode.startsWith('1')) return true;
+  if (newCode.startsWith('2')) return true;
+  if (newCode.startsWith('3')) return true;
+else
+  return false;
+} 
+```
+
