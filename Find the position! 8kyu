@@ -1,3 +1,15 @@
 function position(letter) {
   return `Position of alphabet: ${letter.charCodeAt(0) - 96}`
 }
+
+ OR 
+ 
+ 
+function position(letter){
+let newLetter = letter.toLowerCase();
+let str = 'abcdefghijklmnopqrstuvwxyz';
+
+let pos = str.indexOf(newLetter);
+
+return `Position of alphabet: ${pos + 1}`;
+}
