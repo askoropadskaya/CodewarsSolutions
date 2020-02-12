@@ -1,0 +1,17 @@
+/*
+You'll be given a list of two strings, and each will contain exactly one colon (":") 
+in the middle (but not at beginning or end). The length of the strings, before and after the colon, are random.
+Your job is to return a list of two strings (in the same order as the original list), 
+but with the characters after each colon swapped.
+*/
+
+
+```function tailSwap(arr) {
+  let head = [];
+  let tail = [];
+  arr.map(el => el.split(':').map((el, i, arr)=> i%2 == 0 ? head.push(el) : tail.push(el)));
+  tail = tail.reverse();
+  head = head.map((el ,i) => el + ':' + tail[i]); 
+  return head;
+}
+```
