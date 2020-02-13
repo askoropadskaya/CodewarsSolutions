@@ -7,11 +7,13 @@ but with the characters after each colon swapped.
 
 
 ```function tailSwap(arr) {
-  let head = [];
-  let tail = [];
-  arr.map(el => el.split(':').map((el, i, arr)=> i%2 == 0 ? head.push(el) : tail.push(el)));
-  tail = tail.reverse();
-  head = head.map((el ,i) => el + ':' + tail[i]); 
-  return head;
+  let first = arr[0].split(":");
+  let second = arr[1].split(":");
+  
+  let res = [];
+  res.push(first[0]+":"+second[1]);
+  res.push(second[0]+":"+first[1]);
+  
+  return res;
 }
 ```
