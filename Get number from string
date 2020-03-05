@@ -1,0 +1,5 @@
+
+function getNumberFromString(s) {
+  s = s.replace(/\D/gi, '');
+  return +s;
+}
