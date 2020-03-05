@@ -1,4 +1,7 @@
+===https://www.codewars.com/kata/57faece99610ced690000165/solutions/javascript===
+```
 function remove(s){
   s = s.replace(/!+$/gm, '');
   return s;
 }
+```
