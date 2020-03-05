@@ -1,0 +1,4 @@
+function remove(s){
+  s = s.replace(/!+$/gm, '');
+  return s;
+}
