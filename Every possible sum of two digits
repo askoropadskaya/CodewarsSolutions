@@ -1,0 +1,20 @@
+```
+function digits(num){
+  num = num.toString()
+    .split('')
+    .map(str => {
+      return +str;
+    });
+ 
+  let resultArr = [];
+  for (let i = 0; i < num.length; i++){
+    for (let y = i+1; y < num.length; y++){
+      resultArr.push(num[i] + num[y]);
+    }
+  }
+  return resultArr; 
+}
+```
+
+
+
