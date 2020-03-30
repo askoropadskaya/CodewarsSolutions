@@ -1,0 +1,11 @@
+```
+JavaScript:
+function determineTime(durations){
+ let timer = 0;
+ for (let i = 0; i < durations.length; i++){
+   let arr = durations[i].split(':');
+   timer += +arr[0] + +arr[1]/60;
+ }
+ return timer <= 24;
+}
+```
