@@ -1,0 +1,11 @@
+```
+function dontGiveMeFive(start, end)
+{
+  let resultArr = [];
+  for (let n = start; n <= end; n++){
+    if (!n.toString().includes(5)) resultArr.push(n); 
+  }
+  console.log(resultArr);
+  return resultArr.length;
+}
+```
