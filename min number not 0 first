@@ -1,0 +1,22 @@
+Минимальное натуральное четырехзначное число, состоящее из тех же цифр, что и заданное число 
+
+```
+function changeDigitsOrder(num){
+   num = num.toString().split('');
+   let result = num.sort(function(a, b){
+     return a - b;
+   });
+  if(+result[0] !== 0) return +result.join(''); 
+  
+  for(let i = 1; i < result.length; i++){
+     if (result[i] > 0) {    
+       let resultNew = result[i];
+       result[i] = result[0];
+       result[0] = resultNew;
+       console.log(result);
+       break;
+     }
+  }
+  return +result.join('');
+}
+```
