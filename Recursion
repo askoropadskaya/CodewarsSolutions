@@ -1,0 +1,17 @@
+функция magicNumber("6/27/1975") должна возвратить 1.
+```
+function magicNumber(date){
+  
+  let arr = date.replace(/['/']/g, '');
+  let numberX = 0;
+  
+  for (let i = 0; i < arr.length; i++) {
+    numberX+= +arr[i];
+ }
+  let newStr = numberX.toString();
+    if (newStr > 9) return magicNumber(newStr);
+    else{
+     return numberX;
+   }
+}
+```
