@@ -1,0 +1,22 @@
+function numObj(s){
+  return s.map(n => {
+    const obj = {};
+    obj[n] = String.fromCharCode(n);
+    return obj;
+  });
+}
+
+
+OR
+
+ function numObj(s){
+   let arr = [];
+   for(let i = 0; i < s.length; i++){
+     let keyNum = s[i];
+     let c = String.fromCharCode(keyNum);
+     let obj = new Object();
+     obj[keyNum] = c;
+     arr.push(obj);
+   }
+  return arr;
+}
